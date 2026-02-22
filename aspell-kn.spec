@@ -11,6 +11,7 @@ Source0:	http://ftp.gnu.org/gnu/aspell/dict/kn/aspell6-kn-%{version}-%{subv}.tar
 URL:		http://aspell.net/
 BuildRequires:	aspell >= 3:0.60
 Requires:	aspell >= 3:0.60
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,9 +41,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Copyright README
-%{_libdir}/aspell/kannada.alias
-%{_libdir}/aspell/kn.multi
-%{_libdir}/aspell/kn.rws
+%{_prefix}/lib/aspell/kannada.alias
+%{_prefix}/lib/aspell/kn.multi
+%{_prefix}/lib/aspell/kn.rws
 %{_datadir}/aspell/kn.dat
 %{_datadir}/aspell/u-knda.cmap
 %{_datadir}/aspell/u-knda.cset
