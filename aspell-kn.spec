@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Słownik języka kannada dla aspella
 Name:		aspell-kn
 Version:	0.01
 %define	subv	1
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Applications/Text
 Source0:	http://ftp.gnu.org/gnu/aspell/dict/kn/aspell6-kn-%{version}-%{subv}.tar.bz2
